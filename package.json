@@ -21,6 +21,7 @@
     "modal"
   ],
   "scripts": {
+    "prepublish": "npm run build",
     "build": "npm run clean && babel src -d lib",
     "build-examples": "rimraf examples/static && webpack --config webpack/docs.config.js",
     "clean": "rimraf lib",
